@@ -27,7 +27,7 @@ import Pg from './components/colleges/Pg';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
 
       <Routes>
         <Route path ='/' element ={<Home />} />
@@ -37,9 +37,9 @@ function App() {
 
         {/* colleges */}
         <Route path='btech' element={<Btech />} />
+        <Route path='bba' element={<Bba />} />
         <Route path='mtech' element={<Mtech />} />
         <Route path='diploma' element={<Diploma />} />
-        <Route path='bba' element={<Bba />} />
         <Route path='bcom' element={<Bcom />} />
         <Route path='mba' element={<Mba />} />
         <Route path='mcom' element={<Mcom />} />
