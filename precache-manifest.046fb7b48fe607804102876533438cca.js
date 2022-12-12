@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "54a9546b80812e600cae",
+    "revision": "ffefad464283e0de5a7f",
     "url": "/University_Hub/static/css/main.ece207ed.chunk.css"
   },
   {
-    "revision": "54a9546b80812e600cae",
-    "url": "/University_Hub/static/js/main.3edc06b6.chunk.js"
+    "revision": "ffefad464283e0de5a7f",
+    "url": "/University_Hub/static/js/main.b5f9d6b3.chunk.js"
   },
   {
     "revision": "0febad3d1d7c47367976",
@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/University_Hub/static/media/college.f022b4ba.jpg"
   },
   {
-    "revision": "0ffb546a664f211f6a03b028dd02d761",
+    "revision": "61e7dfcedbb75f4c4af68fd8ebd322f3",
     "url": "/University_Hub/index.html"
   }
 ];
