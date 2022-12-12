@@ -84,6 +84,13 @@
     /* border: 1px solid black; */
     border:none;
 }
+.searchGlass{
+    width: 35px;
+    position: relative;
+    top:-35px;
+    left:280px;
+    cursor: pointer;
+}
 #textContainer{
     font-size: 40px;
     font-weight: 700;
@@ -316,7 +323,7 @@
     margin-top: 10px;
     max-width: 100%;    
     border:1px solid rgb(194, 193, 193);
-    border-radius: 10px;
+    border-radius: 7px;
     padding: 10px;
     display: flex;
     flex-direction: column;

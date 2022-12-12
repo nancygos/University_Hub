@@ -6,7 +6,7 @@ function CollegeCards(props) {
         <div className='collegeCardContainer'>
             <div className='clgName'>{props.name}</div>
             <div>{props.bio}</div>
-            <div> <a href={props.linked} className='collegeCardLink'>know more </a> </div>
+            <div> <a href={props.linked} className='collegeCardLink' target="_blank" rel="noopener noreferrer" >know more </a> </div>
         </div>
     </>
   )

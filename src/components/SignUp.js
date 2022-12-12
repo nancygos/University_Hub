@@ -3,6 +3,12 @@ import logo from './images/logo.png';
 import {Link} from 'react-router-dom';
 
 function SignUp() {
+  let submitName = document.getElementById('submitName');
+  const submitBtn =() =>{
+    // if(submitName.innerText === '') alert("ko");
+    alert(submitName.innerHTML);
+  }
+
   return (
     <>
       <div className='loginContainer'>
@@ -17,13 +23,13 @@ function SignUp() {
               </ul>
             </div>
           <h3>Welcome, Create your accout</h3>
-          <input type="name" placeholder="Name" className='loginInput'/>
+          <input type="name" placeholder="Name" className='loginInput' id='submitName'/>
           <input type="email" placeholder="Email" className='loginInput'/>
           <input type="number" placeholder="Phone" className='loginInput'/>
           <input type="name" placeholder="Current City" className='loginInput'/>
           <input type="password" placeholder="Create password" className='loginInput'/>
 
-          <button className='signupBtn loginbtn'>SignUp</button>
+          <button className='signupBtn loginbtn' onClick={submitBtn} >SignUp</button>
         </div>
       </div>
     </>

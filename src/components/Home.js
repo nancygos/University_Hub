@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {useState} from 'react';
 import Typewriter from "typewriter-effect";
 import Navbar from './Navbar';
 // import { Link } from 'react-router-dom';
@@ -14,8 +14,23 @@ import medical from './images/medical.png';
 import pharmacy from './images/pharmacy.png';
 import computer from './images/computer.png';
 import law from './images/law.png';
+import glass from './images/glass.png';
 
 function Home() {
+
+  const [search , setSearch] = useState("");
+
+  const setItem = (e) =>{
+    setSearch(e.target.value);
+  }
+
+  const listen = () =>{
+      if(search === "") alert("Please write something in seach bar first.");
+      else {
+        alert(`${search} is searched` );
+        window.scrollTo({top:600,behavior: 'smooth'});                   //Scroll window
+      }
+  }
 
   return (
     <>
@@ -38,7 +53,7 @@ function Home() {
                     }}
                 />
             </div>
-            <input type="text" placeholder="What are you looking for?" className='searchBar'/>
+            <input type="text" placeholder="What are you looking for?" className='searchBar' onChange={setItem}/> <img className='searchGlass' src={glass}  alt="glass" onClick={listen} />
         </div>
         <div className='courseConatiner'>
           <h1>Select Your Study Goal</h1>
